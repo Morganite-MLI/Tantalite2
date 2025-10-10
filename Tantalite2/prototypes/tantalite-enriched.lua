@@ -1,0 +1,118 @@
+local util = require("data-util")
+
+if mods["Krastorio2"] then
+data:extend(
+{
+  {
+    type = "item",
+    name = "enriched-tantalite",
+    icon_size = 64,
+    icon = "__Tantalite2__/graphics/icons/enriched-tantalite.png",
+    subgroup = "raw-resource",
+    order = "e",
+    stack_size = 100
+  },
+  {
+    type = "recipe",
+    name = "enriched-tantalite",
+    main_product="enriched-tantalite",
+    icons =
+              {
+                { icon = "__Tantalite2__/graphics/icons/enriched-tantalite.png", icon_size = 64 },
+                { icon = "__Tantalite2__/graphics/icons/tantalite-ore.png", icon_size = 64, scale=0.15, shift= {-8, -8}},
+              },
+    category = "chemistry",
+    energy_required = 3,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    subgroup = "raw-resource",
+    ingredients =
+    {
+      {type = "fluid", name = "kr-hydrogen-chloride", amount = 3},
+      {type = "fluid", name = "water", amount = 25, ignored_by_productivity = 25, ignored_by_stats = 25},
+      {type = "item",  name = "tantalite-ore", amount = 9}
+    },
+    results =
+    {
+      {type = "item",  name = "enriched-tantalite", amount = 6},
+      {type = "fluid", name = "kr-dirty-water", amount = 25, ignored_by_productivity = 25, ignored_by_stats = 25}
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 0.721, g = 0.525, b = 0.043, a = 0.000},
+      secondary = {r = 0.200, g = 0.680, b = 0.300, a = 0.357},
+      tertiary = {r = 0.690, g = 0.768, b = 0.870, a = 0.000},
+      quaternary = {r = 0.0, g = 0.980, b = 0.603, a = 0.900}
+    },
+    order = "e03[enriched-tantalite]"
+  },
+  {
+      type = "recipe",
+      name = "enriched-tantalite-smelting",
+      main_product="tantalum-plate",
+      icons =
+      {
+        { icon = "__Tantalite2__/graphics/icons/tantalum-plate.png", icon_size = 64 },
+        { icon = "__Tantalite2__/graphics/icons/enriched-tantalite.png", icon_size = 64, scale=0.125, shift= {-8, -8}},
+      },
+      subgroup = "raw-resource",
+      category = "smelting",
+      energy_required = 16,
+      enabled = false,
+      always_show_made_in = true,
+      always_show_products = true,
+      ingredients = { {type="item", name="enriched-tantalite", amount=5} },
+      results = { {type="item", name="tantalum-plate", 5}, {"niobium-plate", amount=5} },
+      order = "a",
+  },
+	{
+		type = "recipe",
+		name = "dirty-water-filtration-tantalite",
+		category = "kr-fluid-filtration",
+    main_product="tantalite-ore",
+		icons =
+		{
+			{
+				icon = data.raw.fluid["kr-dirty-water"].icon,
+				icon_size = data.raw.fluid["kr-dirty-water"].icon_size
+			},
+			{
+				icon = data.raw.item["tantalite-ore"].icon,
+				icon_size =	data.raw.item["tantalite-ore"].icon_size,
+				scale = 0.20 * (data.raw.fluid["kr-dirty-water"].icon_size/data.raw.item["tantalite-ore"].icon_size),
+				shift = {0, 4}
+			}
+		},
+		icon_size = data.raw.fluid["kr-dirty-water"].icon_size,
+		energy_required = 2,
+		enabled = false,
+		allow_as_intermediate = false,
+		always_show_made_in = true,
+		always_show_products = true,
+		ingredients =
+		{
+			{type = "fluid", name = "kr-dirty-water", amount = 100, ignored_by_productivity = 100, ignored_by_stats = 100},
+		},
+		results =
+		{
+			{type = "fluid", name = "water", amount = 90, ignored_by_productivity = 90, ignored_by_stats = 90},
+			{type = "item",  name = "stone", probability = 0.40, amount = 1},
+			{type = "item",  name = "tantalite-ore", probability = 0.10, amount = 1},
+		},
+		crafting_machine_tint =
+		{
+			primary = {r = 0.60, g = 0.20, b = 0, a = 0.6},
+			secondary = {r = 1.0, g = 0.843, b = 0.0, a = 0.9}
+		},
+		group ="raw-material",
+    subgroup = "raw-resource",
+		order = "w013[dirty-water-filtration-tantalite]"
+	}
+})
+util.add_effect("kr-enriched-ores", { type = "unlock-recipe", recipe = "enriched-tantalite" })
+util.add_effect("kr-enriched-ores", { type = "unlock-recipe", recipe = "enriched-tantalite-smelting" })
+
+util.add_productivity("enriched-tantalite")
+
+end

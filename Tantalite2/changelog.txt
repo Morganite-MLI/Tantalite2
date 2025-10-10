@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2024-07-29
+  Features:
+    - Added a way to target niobium and tantalum smelting.
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2024-07-16
+  Features:
+    - Added tantalum titanium beam recipe.
+    - Added niobium tin cable to SE energy science pack 1.
+    - Reworked SE material science pack production chain 1-3 to work with Tantalite
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 2024-07-05
+  Features:
+    - Fixed duplicate ingredient error for energy pyroflux.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2024-07-04
+  Features:
+    - Added new pyroflux SE recipe.
+    - Added tantalum plate to SE conductivity data.
+    - Added tantalum plate to SE thermodynamics data.
+    - Fixed enriched tantalite smelting not unlocking.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2024-01-21
+  Features:
+    - Added thorium ore and prossesing for better balance with 248k. (ty dovahkiinPL for suggestion)
+    - Added tantalite ore to SE core fragment.
+    - Added niobium tin cable to advanced solar panel.
+    - Removed old unused files.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2024-01-02
+  Features:
+    - Added niobium tin cable.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2023-12-24
+  Features:
+    - Added 248k support (molten, pure and cast niobium)
+    - Added 248k support (molten, pure and cast tantalum)
+    - Added SE support (molten, ingot, etc... niobium)
+    - Added SE support (molten, ingot, etc... tantalum)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2023-12-19
+  Features:
+    - Electron gun now uses empty amplifier tube if Lasing Around is installed.
+    - Fixed some things that broke after the mod split.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2023-11-23
+  Features:
+    - Alpha release.
