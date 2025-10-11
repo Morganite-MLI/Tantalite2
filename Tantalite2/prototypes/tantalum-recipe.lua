@@ -19,7 +19,7 @@ data:extend({
   if mods["248k-Redux"] then
     thoriated_filament_ingredients = {{type="item", name="thorium-ore", amount=1}}
     if mods["bztungsten"] then
-      table.insert({type="item", name="tungsten-plate", amount=1})
+      table.insert(thoriated_filament_ingredients, {type="item", name="tungsten-plate", amount=1})
     end
     data:extend({
       {
@@ -154,7 +154,7 @@ data:extend({
   if mods["bzlead"] or mods["manganese"] then
     tantalum_capacitor_ingredients = {{type="item", name="tantalum-plate", amount=1}}
     if mods["bzlead"] then
-      table.insert({type="item", name="lead-plate", amount = 1})
+      table.insert(tantalum_capacitor_ingredients, {type="item", name="lead-plate", amount = 1})
     end
     if mods["manganese"] then
       table.insert(tantalum_capacitor_ingredients, {type="item", name="manganese-plate", amount=1})

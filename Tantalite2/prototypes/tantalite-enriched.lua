@@ -63,7 +63,7 @@ data:extend(
       always_show_made_in = true,
       always_show_products = true,
       ingredients = { {type="item", name="enriched-tantalite", amount=5} },
-      results = { {type="item", name="tantalum-plate", 5}, {"niobium-plate", amount=5} },
+      results = { {type="item", name="tantalum-plate", amount=5}, {type="item", name="niobium-plate", amount=5} },
       order = "a",
   },
 	{
@@ -80,7 +80,7 @@ data:extend(
 			{
 				icon = data.raw.item["tantalite-ore"].icon,
 				icon_size =	data.raw.item["tantalite-ore"].icon_size,
-				scale = 0.20 * (data.raw.fluid["kr-dirty-water"].icon_size/data.raw.item["tantalite-ore"].icon_size),
+				scale = 0.20,
 				shift = {0, 4}
 			}
 		},

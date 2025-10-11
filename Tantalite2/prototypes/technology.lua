@@ -144,7 +144,7 @@ data:extend(
           name = "energy-pyroflux",
           icons = {
             { icon = "__space-exploration-graphics__/graphics/icons/fluid/pyroflux.png", icon_size = 64},
-            { icon = "__248k-Redux__/ressources/fusion/fu_materials/fu_materials_energy_crystal.png", icon_size = 64, scale=0.3, shift= {-8, -8}},
+            { icon = "__248k-Redux-graphics__/ressources/fusion/fu_materials/fu_materials_energy_crystal.png", icon_size = 64, scale=0.3, shift= {-8, -8}},
           },
           prerequisites = {"se-energy-science-pack-1"},
           effects = {
