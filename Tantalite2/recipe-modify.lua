@@ -2,10 +2,10 @@ local util = require("data-util")
 
 -- Main vanilla changes
 util.replace_ingredient("laser-turret", "electronic-circuit", "electron-gun", 5)
-util.remove_ingredient("laser-turret", "glass")
+util.remove_ingredient("laser-turret", mods["Krastorio2"] and "kr-glass" or "glass")
 
 util.add_ingredient("rocket-control-unit", "crt", 1)
-util.remove_ingredient("rocket-control-unit", "glass")
+util.remove_ingredient("rocket-control-unit", mods["Krastorio2"] and "kr-glass" or "glass")
 
 util.replace_ingredient("heat-exchanger", "copper-plate", "tantalum-plate",50)
 util.replace_ingredient("heat-pipe", "copper-plate", "tantalum-plate",20)
@@ -115,7 +115,7 @@ if mods["Krastorio2"] then
 end
 
 if mods["space-exploration"] then
-    util.add_product(mods["space-exploration"] and "se-scrap-recycling", {name="tantalite-ore", amount=1, probability=0.05})
+    util.add_product(mods["space-exploration"] and "se-scrap-recycling", { type = "item", name = "tantalite-ore", amount=1, probability=0.05})
     util.remove_ingredient("se-superconductive-cable", "tin-plate")
     util.add_ingredient("se-superconductive-cable", "niobium-tin-cable", 2)
 

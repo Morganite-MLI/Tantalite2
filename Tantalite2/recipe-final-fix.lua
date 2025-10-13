@@ -1,6 +1,6 @@
 local util = require("data-util")
 
-util.remove_ingredient("rocket-control-unit", "glass")
+util.remove_ingredient("rocket-control-unit", mods["Krastorio2"] and "kr-glass" or "glass")
 util.remove_ingredient("rocket-control-unit", "advanced-circuit")
 util.add_ingredient("rocket-control-unit", "advanced-circuit", 2)
 

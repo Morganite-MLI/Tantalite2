@@ -57,12 +57,14 @@ data:extend({
     }
   })
 
+  local glass_name = mods["Krastorio2"] and "kr-glass" or "glass"
+
   local electron_gun_ingredients = {{type="item", name="tantalum-plate", amount=1}, {type="item", name="thoriated-filament", amount=1}, {type="item", name="electronic-circuit", amount=2}}
   if mods["bismuth"] then
     table.insert(electron_gun_ingredients, {type="item", name="pcb-solder", amount=2})
   end
-  if data.raw.item["glass"] then
-    table.insert(electron_gun_ingredients, {type="item", name="glass", amount=2})
+  if data.raw.item[glass_name] then
+    table.insert(electron_gun_ingredients, {type="item", name=glass_name, amount=2})
   end
   if mods["LasingAround-Updated"] then
     electron_gun_ingredients = {{type="item", name="tantalum-plate", amount=1}, {type="item", name="thoriated-filament", amount=1}, {type="item", name="electronic-circuit", amount=2}, {type="item", name="empty-amplifier-tube", amount=1}}
@@ -98,29 +100,20 @@ data:extend({
   })
 
   local crt_ingredients = {{type="item", name="electron-gun", amount=1}, {type="item", name="coal", amount=1}, {type="item", name="advanced-circuit", amount=3}}
-  if data.raw.item["glass"] then
-    table.insert(crt_ingredients, {type="item", name="glass", amount=3})
-  end
-  if data.raw.item["kr-glass"] then
-    table.insert(crt_ingredients, {type="item", name="kr-glass", amount=3})
+  if data.raw.item[glass_name] then
+    table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
   end
   local crt_subgroup = "intermediate-product"
   if mods["bzcarbon"] then
     crt_ingredients = {{type="item", name="electron-gun", amount=1}, {type="item", name="graphene", amount=1}, {type="item", name="advanced-circuit", amount=3}}
-    if data.raw.item["glass"] then
-      table.insert(crt_ingredients, {type="item", name="glass", amount=3})
-    end
-    if data.raw.item["kr-glass"] then
-      table.insert(crt_ingredients, {type="item", name="kr-glass", amount=3})
+    if data.raw.item[glass_name] then
+      table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
     end
   end
   if mods["bzcarbon"] and mods["bismuth"] and mods["bzaluminum"] then
     crt_ingredients = {{type="item", name="electron-gun", amount=1}, {type="item", name="graphene", amount=1}, {type="item", name="advanced-circuit", amount=3}, {type="item", name="pcb-solder", amount=3}, {type="item", name="aluminum-plate", amount=5}}
-    if data.raw.item["glass"] then
-      table.insert(crt_ingredients, {type="item", name="glass", amount=3})
-    end
-    if data.raw.item["kr-glass"] then
-      table.insert(crt_ingredients, {type="item", name="kr-glass", amount=3})
+    if data.raw.item[glass_name] then
+      table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
     end
   end
   if mods["space-exploration"] then
