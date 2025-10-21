@@ -20,7 +20,7 @@ if mods["bismuth"] then
     util.remove_ingredient("rocket-control-unit", "pcb-solder")
 end
 
-if mods["bzcarbon"] then
+if mods["bzcarbon2"] then
     util.remove_ingredient("rocket-control-unit", "graphene")
 end
 
@@ -47,7 +47,7 @@ if mods["aai-industry"] then
         util.replace_ingredient("better-tank", "engine-unit", "advanced-multi-cylinder-engine", 12)
     end
     if mods["space-exploration"] then
-        if mods["bzaluminum"] then
+        if mods["bzaluminum2"] then
             util.remove_ingredient("se-fluid-burner-generator", "spark-plug")
         end
         util.replace_ingredient("se-fluid-burner-generator", "electric-motor", "advanced-multi-cylinder-engine", 5)

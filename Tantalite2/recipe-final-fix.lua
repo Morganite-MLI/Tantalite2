@@ -8,7 +8,7 @@ if mods["space-exploration"] then
     util.add_product("se-core-fragment-omni",{ type = "item", name = "tantalite-ore", amount = 1 })
 end
 
-if mods["bzaluminum"] then
+if mods["bzaluminum2"] then
     --stop bz aluminum from replacing electronic circuit. Not sure why it does that
     util.replace_ingredient("electron-gun", "aluminum-cable", "electronic-circuit")
     util.remove_ingredient("rocket-control-unit", "aluminum-plate")

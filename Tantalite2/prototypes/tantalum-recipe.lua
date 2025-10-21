@@ -18,7 +18,7 @@ data:extend({
   end
   if mods["248k-Redux"] then
     thoriated_filament_ingredients = {{type="item", name="thorium-ore", amount=1}}
-    if mods["bztungsten"] then
+    if mods["bztungsten2"] then
       table.insert(thoriated_filament_ingredients, {type="item", name="tungsten-plate", amount=1})
     end
     data:extend({
@@ -104,13 +104,13 @@ data:extend({
     table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
   end
   local crt_subgroup = "intermediate-product"
-  if mods["bzcarbon"] then
+  if mods["bzcarbon2"] then
     crt_ingredients = {{type="item", name="electron-gun", amount=1}, {type="item", name="graphene", amount=1}, {type="item", name="advanced-circuit", amount=3}}
     if data.raw.item[glass_name] then
       table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
     end
   end
-  if mods["bzcarbon"] and mods["bismuth"] and mods["bzaluminum"] then
+  if mods["bzcarbon2"] and mods["bismuth"] and mods["bzaluminum2"] then
     crt_ingredients = {{type="item", name="electron-gun", amount=1}, {type="item", name="graphene", amount=1}, {type="item", name="advanced-circuit", amount=3}, {type="item", name="pcb-solder", amount=3}, {type="item", name="aluminum-plate", amount=5}}
     if data.raw.item[glass_name] then
       table.insert(crt_ingredients, {type="item", name=glass_name, amount=3})
@@ -144,9 +144,9 @@ data:extend({
 
   local tantalum_capacitor_ingredients = {{type="item", name="tantalum-plate", amount=1},{type="item", name="copper-cable", amount=1}}
   local tantalum_capacitor_subgroup = "intermediate-product"
-  if mods["bzlead"] or mods["manganese"] then
+  if mods["bzlead2"] or mods["manganese"] then
     tantalum_capacitor_ingredients = {{type="item", name="tantalum-plate", amount=1}}
-    if mods["bzlead"] then
+    if mods["bzlead2"] then
       table.insert(tantalum_capacitor_ingredients, {type="item", name="lead-plate", amount = 1})
     end
     if mods["manganese"] then

@@ -40,7 +40,7 @@ data:extend(
 util.add_prerequisite("laser-turret", "electron-emitter")
 
 local crt_prerequisites = {"electron-emitter"}
-if mods["bzcarbon"] then
+if mods["bzcarbon2"] then
   crt_prerequisites = {"graphene", "electron-emitter"}
 end
 data:extend(
@@ -78,7 +78,7 @@ local advanced_tantalum_processing_pre = {"chemical-science-pack"}
 if mods["IfNickel-Updated"] and data.raw.item["advanced-flow-controller"] then
   advanced_multi_cylinder_engine_tech = {"advanced-flow-controller"}
 end
-if mods["bztitanium"] then
+if mods["bztitanium2"] then
   advanced_tantalum_processing_pre = {"titanium-processing"}
 end
 data:extend(
