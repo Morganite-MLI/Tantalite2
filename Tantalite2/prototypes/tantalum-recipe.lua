@@ -199,6 +199,7 @@ data:extend({
 util.add_unlock("advanced-circuit", "tantalum-capacitor")
 if mods["Krastorio2"] then
   util.add_ingredient("kr-electronic-components", "tantalum-capacitor", 2)
+  util.add_ingredient("kr-electronic-components-with-lithium", "tantalum-capacitor", 3)
 else
   util.add_ingredient("advanced-circuit", "tantalum-capacitor", 2)
 end
