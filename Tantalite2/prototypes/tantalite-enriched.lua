@@ -112,6 +112,7 @@ data:extend(
 })
 util.add_effect("kr-enriched-ores", { type = "unlock-recipe", recipe = "enriched-tantalite" })
 util.add_effect("kr-enriched-ores", { type = "unlock-recipe", recipe = "enriched-tantalite-smelting" })
+util.add_effect("kr-enriched-ores", { type = "unlock-recipe", recipe = "dirty-water-filtration-tantalite" })
 
 util.add_productivity("enriched-tantalite")
 
