@@ -53,8 +53,8 @@ if mods["aai-industry"] then
         util.replace_ingredient("se-fluid-burner-generator", "electric-motor", "advanced-multi-cylinder-engine", 5)
     end
     if mods["248k-Redux"] then
-        util.replace_ingredient("fi_refinery_recipe", "engine-unit", "advanced-multi-cylinder-engine", 10)
-        util.remove_ingredient("fi_refinery_recipe",mods["IfNickel-Updated"] and "advanced-flow-controller")
+        util.replace_ingredient("fi_refinery", "engine-unit", "advanced-multi-cylinder-engine", 10)
+        util.remove_ingredient("fi_refinery",mods["IfNickel-Updated"] and "advanced-flow-controller")
     end
     if mods["FluidMustFlow"] then
         util.replace_ingredient("duct-end-point-intake", "engine-unit", "advanced-multi-cylinder-engine", 3)
@@ -69,7 +69,7 @@ if mods["aai-industry"] then
 end
 
 if mods["248k-Redux"] then
-    util.add_ingredient("fi_robo_port_recipe", "tantalum-titanium-beam", 10)
+    util.add_ingredient("fi_robo_port", "tantalum-titanium-beam", 10)
 end
 
 if mods["bobassembly"] then

@@ -140,7 +140,7 @@ if mods["248k-Redux"] and mods["space-exploration"] then
       order = "h",
       enabled = false,
       energy_required = 8,
-      ingredients = {{type="item", name="niobium-plate", amount = 1}, {type="item", name="fu_materials_energy_crystal", amount=1}, { type = "fluid", name = "se-liquid-rocket-fuel", amount = 10 }},
+      ingredients = {{type="item", name="niobium-plate", amount = 1}, {type="item", name="fu_energy_crystal", amount=1}, { type = "fluid", name = "se-liquid-rocket-fuel", amount = 10 }},
       results = {{ type = "fluid", name = "se-pyroflux", amount = 10 }},
     }
   })
