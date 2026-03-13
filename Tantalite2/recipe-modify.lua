@@ -115,7 +115,7 @@ if mods["Krastorio2"] then
 end
 
 if mods["space-exploration"] then
-    util.add_product(mods["space-exploration"] and "se-scrap-recycling", { type = "item", name = "tantalite-ore", amount=1, probability=0.05})
+    util.add_product(mods["space-exploration"] and "se-scrap-hard-recycling", { type = "item", name = "tantalite-ore", amount=1, probability=0.05})
     util.remove_ingredient("se-superconductive-cable", "tin-plate")
     util.add_ingredient("se-superconductive-cable", "niobium-tin-cable", 2)
 
