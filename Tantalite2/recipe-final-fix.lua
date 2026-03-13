@@ -1,4 +1,4 @@
-local util = require("data-util")
+local util = require("__bzlib__/data-util")
 
 util.remove_ingredient("rocket-control-unit", mods["Krastorio2"] and "kr-glass" or "glass")
 util.remove_ingredient("rocket-control-unit", "advanced-circuit")
