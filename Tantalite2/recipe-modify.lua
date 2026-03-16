@@ -1,4 +1,4 @@
-local util = require("__bzlib__/data-util")
+local util = require("data-util")
 
 -- Main vanilla changes
 util.replace_ingredient("laser-turret", "electronic-circuit", "electron-gun", 5)
