@@ -1,6 +1,6 @@
 {
   "name": "Tantalite2",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "factorio_version": "2.0",
   "title": "Tantalite",
   "description": "Tantalite is a mod adding tantalum and niobium.\n\nThis mod is inspired by Brevven's BZ mods.",
@@ -9,7 +9,7 @@
   "dependencies": [
     "base >= 2.0.0",
     "bzlib",
-    "? 248k-Redux",
+    "? 248k-Redux >= 0.1.35",
     "? aai-industry",
     "? aai-vehicles-miner",
     "? angelsaddons-cab",
