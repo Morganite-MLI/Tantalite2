@@ -7,7 +7,7 @@ if mods["space-exploration"] then
   se_delivery_cannon_recipes["niobium-plate"] = {name= "niobium-plate"}
   util.se_landfill({ore="tantalite-ore"})
 
-  util.se_matter({ore="tantalite-ore", energy_required=1, quant_out=10, stream_out=60})
+  util.se_matter({ore="tantalite-ore", energy_required=1, quant_out=10, stream_out=600})
   data:extend({
   {
     type = "item-subgroup",

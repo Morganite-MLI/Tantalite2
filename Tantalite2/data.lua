@@ -3,6 +3,7 @@ require("prototypes.thorium-ore")
 require("prototypes.tantalum-recipe")
 require("prototypes.niobium-recipe")
 require("prototypes.technology")
+require("prototypes.tantalite-matter")
 
 require("prototypes.tantalite-enriched")    -- Enriched Al for Krastorio 2
 require("prototypes.tantalite-recipe-se")    -- Space Exploration

@@ -127,7 +127,7 @@ if mods["space-exploration"] then
     util.set_ingredient("se-hot-thermodynamics-data", "se-empty-data", 4)
     util.set_product_amount("se-hot-thermodynamics-data", "se-hot-thermodynamics-data", 4)
 
-    util.remove_ingredient("se-space-rail", "titanium-plate-plate")
+    util.remove_ingredient("se-space-rail", "titanium-plate")
     util.add_ingredient("se-space-rail","tantalum-titanium-beam", 50)
 
     util.remove_ingredient("se-space-platform-scaffold", "steel-plate")
