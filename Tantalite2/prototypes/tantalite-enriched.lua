@@ -97,8 +97,8 @@ data:extend(
 		results =
 		{
 			{type = "fluid", name = "water", amount = 90, ignored_by_productivity = 90, ignored_by_stats = 90},
-			{type = "item",  name = "stone", probability = 0.40, amount = 1},
-			{type = "item",  name = "tantalite-ore", probability = 0.10, amount = 1},
+			{type = "item",  name = "stone", independent_probability = 0.40, amount = 1},
+			{type = "item",  name = "tantalite-ore", independent_probability = 0.10, amount = 1},
 		},
 		crafting_machine_tint =
 		{
