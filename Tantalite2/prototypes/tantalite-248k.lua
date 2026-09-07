@@ -52,7 +52,7 @@ data:extend({
         type = "recipe",
         name = "fi-purify-tantalite-recipe",
         enabled = false,
-        category = "el_purifier_category",
+        categories = {"el_purifier_category"},
         main_product = "el_dirty_water",
         ingredients = {
             {type="fluid", name="water", amount=100},
@@ -81,7 +81,7 @@ data:extend({
         type = "recipe",
         name = "fi-arc-pure-tantalum-recipe",
         enabled = false,
-        category = "el_arc_furnace_category",
+        categories = {"el_arc_furnace_category"},
         ingredients = {
             {type="item", name="fi-materials-pure-tantalum", amount=1},
         },
@@ -98,7 +98,7 @@ data:extend({
         type = "recipe",
         name = "fi-cast-pure-tantalum-recipe",
         enabled = false,
-        category = "el_caster_category",
+        categories = {"el_caster_category"},
         ingredients = {
             {type="fluid", name="fi-arc-pure-tantalum", amount=100},
         },
@@ -114,7 +114,7 @@ data:extend({
         type = "recipe",
         name = "fi-arc-pure-niobium-recipe",
         enabled = false,
-        category = "el_arc_furnace_category",
+        categories = {"el_arc_furnace_category"},
         ingredients = {
             {type="item", name="fi-materials-pure-niobium", amount=1},
         },
@@ -131,7 +131,7 @@ data:extend({
         type = "recipe",
         name = "fi-cast-pure-niobium-recipe",
         enabled = false,
-        category = "el_caster_category",
+        categories = {"el_caster_category"},
         ingredients = {
             {type="fluid", name="fi-arc-pure-niobium", amount=100},
         },

@@ -31,7 +31,7 @@ data:extend({
     {
       type = "recipe",
       name = "heatsink",
-      category = "crafting",
+      categories = {"crafting"},
       order = "h",
       enabled = false,
       energy_required = 5,
@@ -58,7 +58,7 @@ data:extend({
     {
       type = "recipe",
       name = "niobium-tin-cable",
-      category = "crafting",
+      categories = {"crafting"},
       order = "n",
       enabled = false,
       energy_required = 2,
@@ -89,7 +89,7 @@ data:extend({
     {
       type = "recipe",
       name = "advanced-multi-cylinder-engine",
-      category = "crafting",
+      categories = {"crafting"},
       order = "f",
       enabled = false,
       energy_required = 10,
@@ -118,7 +118,7 @@ data:extend({
     {
       type = "recipe",
       name = "automation-core-2",
-      category = "crafting",
+      categories = {"crafting"},
       order = "d",
       enabled = false,
       energy_required = 5,
@@ -136,7 +136,7 @@ if mods["248k-Redux"] and mods["space-exploration"] then
         { icon = "__space-exploration-graphics__/graphics/icons/fluid/pyroflux.png", icon_size = 64},
         { icon = "__248k-Redux-graphics__/ressources/fusion/fu_materials/fu_materials_energy_crystal.png", icon_size = 64, scale=0.3, shift= {-8, -8}},
       },
-      category = "chemistry",
+      categories = {"chemistry"},
       order = "h",
       enabled = false,
       energy_required = 8,
@@ -151,7 +151,7 @@ if mods["space-exploration"] then
     {
       type = "recipe",
       name = "niobium-refining",
-      category = "smelting",
+      categories = {"smelting"},
       order = "h",
       enabled = false,
       energy_required = 8,
