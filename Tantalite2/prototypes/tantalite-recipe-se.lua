@@ -63,7 +63,7 @@ if mods["space-exploration"] then
   },
   {
     type = "recipe",
-    category = "smelting",
+    categories = {"smelting"},
     name = "molten-tantalite",
     subgroup = "tantalite",
     results = {
@@ -84,7 +84,7 @@ if mods["space-exploration"] then
     name = "tantalite-ingot",
     subgroup = "tantalite",
     icons = {{icon = "__Tantalite2__/graphics/icons/tantalum-ingot.png", icon_size = 64}},
-    category = "casting",
+    categories = {"casting"},
     main_porduct = "tantalum-ingot",
     results = {{type="item", name="tantalum-ingot", amount=1}, {type="item", name="niobium-ingot", amount=1}},
     energy_required = 20,
@@ -97,7 +97,7 @@ if mods["space-exploration"] then
   },
   {
     type = "recipe",
-    category = "crafting",
+    categories = {"crafting"},
     name = "tantalum-ingot-to-plate",
     icons = {
       {icon = "__Tantalite2__/graphics/icons/tantalum-plate.png", icon_size = 64},
@@ -117,7 +117,7 @@ if mods["space-exploration"] then
     },
     {
       type = "recipe",
-      category = "crafting",
+      categories = {"crafting"},
       name = "niobium-ingot-to-plate",
       icons = {
         {icon = "__Tantalite2__/graphics/icons/niobium-plate.png", icon_size = 64},

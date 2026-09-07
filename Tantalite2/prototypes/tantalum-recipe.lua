@@ -25,7 +25,7 @@ if mods["248k-Redux"] then
     {
       type = "recipe",
       name = "thorium-processing",
-      category = "centrifuging",
+      categories = {"centrifuging"},
       order = "t",
       enabled = false,
       energy_required = 14,
@@ -48,7 +48,7 @@ data:extend({
   {
     type = "recipe",
     name = "thoriated-filament",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     order = "d[thoriated-filament]",
     enabled = false,
     energy_required = 2,
@@ -90,7 +90,7 @@ data:extend({
   {
     type = "recipe",
     name = "electron-gun",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     order = "e[electron-gun]",
     enabled = false,
     energy_required = 8,
@@ -133,7 +133,7 @@ data:extend({
   {
     type = "recipe",
     name = "crt",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     order = "c[crt]",
     enabled = false,
     energy_required = 12,
@@ -178,7 +178,7 @@ data:extend({
   {
     type = "recipe",
     name = "tantalum-capacitor",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     order = "t",
     enabled = false,
     energy_required = 2,
@@ -188,7 +188,7 @@ data:extend({
   {
     type = "recipe",
     name = "tantalum-titanium-beam",
-    category = "crafting",
+    categories = {"crafting"},
     order = "t",
     enabled = false,
     energy_required = 2,
@@ -209,7 +209,7 @@ if mods["space-exploration"] then
     {
       type = "recipe",
       name = "tantalum-refining",
-      category = "smelting",
+      categories = {"smelting"},
       order = "h",
       enabled = false,
       energy_required = 8,

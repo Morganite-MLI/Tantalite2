@@ -81,7 +81,7 @@ data:extend({
   {
     type = "recipe",
     name = "tantalite-smelting",
-    category = "smelting",
+    categories = {"smelting"},
     subgroup = subgroup,
     order = "d[tantalum-plate]",
     icons = (mods["Krastorio2"] and
