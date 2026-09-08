@@ -1,7 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.1
+Date: 07.09.2026
+  Compatibility:
+    - Updated for 2.1
+      Thanks to pla for doing the fiddly parts
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 07.09.2026
+  Locale:
+    - Added Polish localization from S3BA
+    - Plus one English localization from pla
+  Changes:
+    - Added productivity to thorium processing
+    - Fixed changelog formatting
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 24.05.2026
-  Thanks to Morganite for all the fixes
+  Info:
+    - Thanks to Morganite for all the fixes
   Changes:
     - Add tantalite and niobium matter recipes
 ---------------------------------------------------------------------------------------------------

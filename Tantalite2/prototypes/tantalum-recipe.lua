@@ -31,6 +31,7 @@ if mods["248k-Redux"] then
       energy_required = 14,
       ingredients = { { type = "item", name = "thorium-ore", amount = 10 } },
       results = { { type = "item", name = "fi_thorium232", amount = 1 } },
+      allow_productivity = true
     }
   })
   util.add_unlock("uranium-processing", "thorium-processing") --maybe add its own tech later
